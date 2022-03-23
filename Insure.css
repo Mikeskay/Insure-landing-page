@@ -1,0 +1,430 @@
+
+header{
+    margin-left:8.33%;
+    margin-right:8.33%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.NavLogo{
+    flex: 50%;
+    order: 1;
+
+}
+
+nav{
+    flex: 50%;
+    order: 2;
+    position: relative;
+}
+
+
+#logo1{
+    
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+nav ul{
+    position: absolute;
+    right: 0; 
+
+
+}
+nav li{
+    display: inline-block;
+    
+    padding: 10px;  
+    
+}
+
+.blackbutton{
+    border: 2px solid black;
+    background-color: Transparent;
+    padding: 14px 28px;
+    cursor: pointer;
+    color: black;
+
+
+}
+
+.whitebutton{
+    border: 2px solid white;
+    background-color: Transparent;
+    padding: 14px 28px;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+h1, h2 {
+    
+    font-family:'DM Serif Display';
+    font-weight: 400;
+    font-size: 50px;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    font-size: 16px;
+    font-family:karla;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.main{
+    position: relative;
+    height: 950px;
+    z-index: 0;
+}
+.main p{
+
+    color: white;
+
+}
+
+.mainwrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 0% 8.33% 8.33% 8.33%;
+}
+.mainimage{
+    position: relative;
+    order: 2;
+}
+#heroimage{
+    position: absolute; 
+    top: 100px;
+    right: 0;
+    
+}
+
+
+.mainbanner{
+    background-color: hsl(256, 26%, 20%);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.line2{
+    position: absolute;
+    bottom: 0;
+    left: 8.33%;
+    color: hsl(256, 26%, 20%);
+
+}
+
+.maintextbox{
+    order: 1;
+    flex: 50%;
+    
+}
+
+.maintextbox p{
+
+    font-weight: 700;
+
+}
+
+.textwrapper{
+    position: relative;
+    top:100px ;
+}
+
+.line1{
+    position: absolute;
+    left: 0;
+}
+
+.mainimage{
+    order: 2;
+    flex: 50%;
+    
+}
+
+.newsitem{
+    margin: 0 8.33% 8.33% 8.33%;
+    position: relative;
+    
+}
+
+.news_item_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.item{
+    flex: 33.33%;
+    padding: 20px;
+}
+
+.item p{
+
+    font-weight: 400;
+    color: gray;
+
+}
+
+.banner{
+    margin: 8.33%;
+    height: 250px;
+    background-color: hsl(256, 26%, 20%);
+}
+
+.footerwrapper{
+    margin: 8.33%; 
+    position: relative;
+    
+}
+
+.socialbanner{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+}
+
+
+
+.bannerLogo{
+    flex:50%;
+    order: 1; 
+    position: relative; 
+}
+
+#logo2{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+
+}
+
+.socialbuttons{
+    flex: 50%;
+    position: relative;
+    order: 2;
+    
+}
+
+
+.socialbuttons li{
+    display: inline-block;
+    padding: 5px;
+    
+    
+}
+
+.socialbuttons ul{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    
+}
+
+
+
+.footeritems{
+    display: flex;
+    flex-direction: row;
+    border-top:1px solid hsl(273, 4%, 51%);
+    
+}
+
+.fitem{
+    flex: 25%;
+    position: relative;
+    right: 40px;
+   
+}
+
+.fitem h3{
+    
+    position: relative;
+    left: 40px;
+   
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 390px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.swirl1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    
+    
+}
+
+.swirl2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    
+}
+
+.banner{
+    position: relative;
+    z-index: 1;
+}
+
+.bannerwrapper{
+    z-index: 1;
+    
+}
+
+.banner h2{
+    color: white;
+    margin: 65px;
+    position: relative;
+    top:50px; 
+}
+
+
+.banner button{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    
+}
+
+.footeritems li, h3{
+    font-size: 16px;
+    font-family:karla;
+    
+}
+.swirl3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    
+}
+
+.swirl4{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Responsive layout*/
+
+@media screen and (max-width: 1000px) { 
+    
+    header{
+        height:80px;     
+    }
+
+    nav{
+        display: none;
+    }
+    .main{
+        height: 950px;
+        border: 1px solid black;  
+    }
+
+    .mainwrapper{
+        flex-direction: column-reverse;
+        margin: 0;
+        height: 100%;
+        position: relative;
+    }
+
+    .mainimage{
+        height: 450px;
+    }
+
+    #heroimage{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+ 
+    .maintextbox{  
+        background-color: hsl(256, 26%, 20%);
+               
+    }
+
+    .textwrapper{
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .mainbanner{
+        display: none;
+    }
+
+    .newsitem{
+        margin-top: 140px;
+        text-align: center;
+    }
+    
+    .news_item_wrapper{
+        flex-direction: column;
+        
+    }
+
+    .bannerwrapper button{
+            margin: 0;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+          
+    }
+
+    .bannerwrapper h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .socialbanner{
+        flex-direction: column;
+        
+    }
+    
+    .bannerLogo{
+        position: relative;
+        width: 100%;
+    }
+
+    #logo2{
+        position: absolute;
+    }
+    
+     
+    .socialbuttons{
+        width: 100%;
+        
+    }
+
+    .footeritems{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+}
